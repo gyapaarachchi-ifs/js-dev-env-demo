@@ -3,9 +3,9 @@
 "version": "1.0.0",
 "description": "JavaScript development environment",
 "scripts": {
-    "prestart": "node buidScripts/startMessage.js",
-    "start": "node buidScripts/srcServer.js",
-    "poststart": "node buidScripts/endMessage.js",
+    "prestart": "babel-node buidScripts/startMessage.js",
+    "start": "babel-node buidScripts/srcServer.js",
+    "poststart": "babel-node buidScripts/endMessage.js",
     "localtunnel": "npx lt --port 3000 --subdomain gayalk",
     "start-app": "npm-run-all --parallel start localtunnel"
 },
